@@ -8,8 +8,8 @@ public class MultiMaxTest {
     @Test
     public void whenFirstMax() {
         MultiMax check = new MultiMax();
-        int result = check.max(1, 1, 1);
-        assertThat(result, is(1));
+        int result = check.max(5, 2, 3);
+        assertThat(result, is(5));
     }
     @Test
     public void whenSecondMax() {
@@ -21,7 +21,7 @@ public class MultiMaxTest {
     @Test
     public void whenThirdMax() {
         MultiMax check = new MultiMax();
-        int result = check.max(1, 1, 4);
+        int result = check.max(1, 2, 4);
         assertThat(result, is(4));
     }
 
