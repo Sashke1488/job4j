@@ -3,13 +3,13 @@ package ru.job4j.opp;
 public class Battery {
     private int load;
 
-    public Battery(int warhead){
+    public Battery(int warhead) {
         this.load = warhead;
     }
 
-    public void exchange(Battery another){
-        this.load = another.load + this.load;
-        another.load = 0;
+    public void exchange(Battery another) {
+        another.load = another.load + this.load;
+        this.load = 0;
     }
 
     public static void main(String[] args) {
