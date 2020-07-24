@@ -4,6 +4,11 @@ public class Item {
     private String id;
     private String name;
 
+    @Override
+    public String toString() {
+        return "Name: " + this.getName() + " | " + "Id: " + this.getId();
+    }
+
     public Item(String name) {
         this.name = name;
     }
