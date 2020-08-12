@@ -12,7 +12,7 @@ public class StartUI {
     public static void showAll(Input input, Tracker tracker) {
         System.out.println("=== Show all items ===");
         for (Item item : tracker.findAll()) {
-            System.out.println(item.toString());
+            System.out.println(item);
         }
     }
 
